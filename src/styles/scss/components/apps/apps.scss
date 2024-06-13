@@ -1,0 +1,52 @@
+.apps {
+  background-color: map-get($colors, "banner-bg");
+
+  &__content {
+    height: 770px;
+    @include flex-gap(50px);
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+  }
+
+
+
+&__title{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  h3{
+    font-size: map-get($font-sizes,"xs");
+    color: map-get($colors,"headers-color");
+}
+  h2{
+    font-size: map-get($font-sizes,"xl");
+    color: map-get($colors,"headers-color");
+    font-weight: 100;
+}
+
+  p{
+    font-size: map-get($font-sizes,"md");
+    line-height: 20px;
+}
+}
+
+&__images{
+    position: relative;
+}
+
+  &__images-2{
+    position: absolute;
+    left: -81px;
+    top: 60px;
+}
+
+  &__images-3{
+    position: absolute;
+    width: 60%;
+    left: 210px;
+    top: 40px;
+}
+}

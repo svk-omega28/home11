@@ -1,0 +1,22 @@
+@use "sass:map";
+
+%flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+%list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%base-link {
+  text-decoration: none;
+  color: map-get($colors, 'main-font-color');
+  transition: 0.3s;
+
+  &:hover {
+    color: map-get($colors, 'accent-color');
+  }
+}

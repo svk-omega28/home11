@@ -1,0 +1,56 @@
+.section__quotes{
+  background-color: #F6F9FF;
+}
+.banner__quotes{
+  height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+
+}
+.banner__quotes-title{
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.banner__quotes-title h3{
+  font-size: map-get($font-sizes,"xs");
+  color: map-get($font-color,"blue");
+}
+
+.banner__quotes-title h2{
+  font-size: map-get($font-sizes,"xxl");
+  color: map-get($font-color,"blue");
+}
+.banner__quotes-title p{
+  font-size: map-get($font-sizes,"sm");
+  line-height: 19px;
+  color: map-get($font-color,"grey");
+}
+
+.banner__quotes-description p{
+  width: 50%;
+  font-size: map-get($font-sizes,"sm");
+  line-height: 19px;
+  color: map-get($font-color,"grey");
+}
+
+
+.banner__quotes-description{
+  position: relative;
+  width: 420px;
+  height: 175px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+
+}
+.banner__quotes-description img{
+  position: absolute;
+  left: 200px;
+  bottom: -30px;
+}

@@ -1,0 +1,44 @@
+@use "sass:map";
+
+body {
+  font-family: $secondary-font-family;
+  font-size: map-get($font-sizes, 'md');
+  color: map-get($colors, 'main-font-color');
+}
+
+.container,{
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container {
+  max-width: map-get($content-widths, 'xl');
+}
+
+
+a {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  color: map-get($colors, 'main-font-color');
+}
+
+a:hover {
+  color: map-get($colors,"accent-color");
+  transition: 0.3s;
+  border-radius: 5px;
+
+}
+
+li{
+  list-style: none;
+  text-decoration: none;
+}
+
+.bordered {
+  border-bottom: 2px solid map-get($colors, 'bordered-color');
+}
+
+
+
+

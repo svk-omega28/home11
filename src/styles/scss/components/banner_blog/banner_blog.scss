@@ -1,0 +1,53 @@
+.section__blog{
+  background-color: #F5F8FF;
+}
+.banner__blog{
+  height: 860px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 92px;
+}
+.banner__blog-title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.banner__blog-title h3{
+  font-size: map-get($font-sizes,"xs");
+  color: map-get($font-color,"blue");
+}
+.banner__blog-title h2{
+  font-size: map-get($font-sizes,"xl");
+  color: map-get($font-color,"blue");
+}
+
+.banner__blog-items{
+  padding: 35px 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.banner__blog-description{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.banner__blog-description h2{
+  font-size: map-get($font-sizes,"xxl");
+  color: map-get($font-color,"blue");
+}
+
+.banner__blog-description p{
+  font-size: map-get($font-sizes,"sm");
+  color: map-get($font-color,"blue-light");
+  line-height: 19px;
+}
+
+

@@ -1,0 +1,49 @@
+$main-font-family: 'Quicksand', 'Roboto', sans-serif;
+$secondary-font-family: 'Roboto', 'Quicksand', sans-serif;
+$base-fonts-path: './../../fonts/';
+$base-assets-path: './../../assets/';
+
+$font-sizes: (
+        "xxl": 48px,
+        "xl": 36px,
+        "l": 24px,
+        "lg": 18px,
+        "md": 15px,
+        "sm": 13px,
+        "xs": 11px,
+);
+
+$colors: (
+        "accent-color": #5E81FE,
+        "light-blue": #D2E1FF,
+        "dark-blue": #6888FF,
+        "headers-color": #3D4F9F,
+        "main-font-color": #8D96BD,
+        "btn-primary-color": #3A79FF,
+        "btn-danger-bg-color": #FFD7D7,
+        "btn-danger-color": #D43F3F,
+        "btn-secondary-color": #ADB4D2,
+        "btn-icon-color": #fff,
+        "white-color": #fff,
+        "btn-icon-bg-color": #4C85FF,
+        "btn-base-color": #A6B6DA,
+        "black": #000,
+        "bordered-color": #D8E3FE,
+        "banner-bg": #f5f6ff,
+        "logos-hover-color": #5982E7,
+        "app-right-bg": #E0E9FF,
+        "inputs-bg": #EFEFF7,
+        "inputs-color": #7A85AD,
+        "about-p": #ADB3CB,
+        "item-h2": #4074F8,
+        "users": #5E80FF,
+);
+
+$content-widths: (
+        'xl': 1200px,
+);
+
+$containers: (
+        'container': 1200px,
+
+)

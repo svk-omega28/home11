@@ -1,0 +1,16 @@
+.partners{
+
+  &__content {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+
+
+    a:hover path {
+      fill: map-get($colors, 'logos-hover-color');
+      transition: 0.3s;
+    }
+  }
+}

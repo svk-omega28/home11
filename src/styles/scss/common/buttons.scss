@@ -1,0 +1,94 @@
+@use "sass:map";
+
+.btn {
+  $btn-shadow: 0px 5px 7px -4px;
+
+  line-height: normal;
+  font-family: $main-font-family;
+  padding: 9px 11px;
+  margin: 0;
+  background-color: transparent;
+  border: 2px solid transparent;
+  text-decoration: none;
+  color: map-get($colors, 'btn-base-color');
+  cursor: pointer;
+  transition: .3s;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size:  map-get($font-sizes, 'sm');
+
+
+  &:focus, &:hover {
+    box-shadow: $btn-shadow map-get($colors, 'btn-base-color');
+  }
+
+  &.btn-primary {
+    @include create-btn-styles(
+        map-get($colors, 'light-blue'),
+        map-get($colors, 'btn-primary-color'),
+        map-get($colors, 'light-blue'),
+        $btn-shadow
+    );
+  }
+
+  &.btn-accept {
+    @include create-btn-styles(
+                    map-get($colors, 'btn-primary-color'),
+                    map-get($colors, 'white-color'),
+                    map-get($colors, 'light-blue'),
+                    $btn-shadow
+    );
+  }
+
+  &.btn-danger {
+    @include create-btn-styles(
+        map-get($colors, 'btn-danger-bg-color'),
+        map-get($colors, 'btn-danger-color'),
+        map-get($colors, 'btn-danger-bg-color'),
+        $btn-shadow
+    );
+  }
+
+  &.btn-secondary {
+    @include create-btn-styles(
+        transparent,
+        map-get($colors, 'btn-secondary-color'),
+        map-get($colors, 'btn-secondary-color'),
+        $btn-shadow
+    );
+  }
+
+  &.btn-icon {
+    @include create-btn-styles(
+        map-get($colors, 'btn-icon-bg-color'),
+        map-get($colors, 'btn-icon-color'),
+        map-get($colors, 'btn-icon-bg-color')
+        $btn-shadow
+    );
+    &.rounded {
+      border-radius: 50px;
+      background-color: map-get($colors, 'btn-icon-color');
+      color:  map-get($colors, 'accent-color');
+    }
+  }
+
+  &.btn-xl {
+    @include create-btn-sizes(17px 20px, map-get($font-sizes, 'md'));
+  }
+
+  &.btn-lg {
+    @include create-btn-sizes(11px 13px, map-get($font-sizes, 'md'));
+  }
+
+  &.btn-md {
+    @include create-btn-sizes(9px 11px, map-get($font-sizes, 'sm'));
+  }
+
+  &.btn-sm {
+    @include create-btn-sizes(7px 9px, map-get($font-sizes, 'xs'));
+  }
+
+  &.btn-xs {
+    @include create-btn-sizes(5px 7px, 9px);
+  }
+}

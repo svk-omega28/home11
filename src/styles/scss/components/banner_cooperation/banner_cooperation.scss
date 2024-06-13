@@ -1,0 +1,30 @@
+.section__cooperation{
+  background-color: rgba(104, 136, 255, 1);
+  background-image: linear-gradient(167deg, rgba(104, 136, 255, 1) 0%, rgba(94, 128, 255, 1) 100%);
+}
+.banner__cooperation{
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+.banner__cooperation h3{
+  font-size: 10px;
+  color: #FFFFFF;
+}
+.banner__cooperation h2{
+  font-size: 48px;
+  color: #FFFFFF;
+}
+.banner__cooperation h2 > span{
+  font-weight: bold;
+}
+.banner__cooperation p{
+  width: 45%;
+  text-align: center;
+  font-size: 15px;
+  line-height: 19px;
+  color: #DFE2EF;
+}

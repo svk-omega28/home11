@@ -1,0 +1,38 @@
+.header{
+  padding: 15px 0;
+  max-height: 80px;
+
+&__content{
+  @extend %flex-between;
+  align-items: center;
+}
+
+&__start{
+    @extend %flex-between;
+    @include flex-gap(73px, false);
+    align-items: center;
+}
+
+&__logo{
+  width: 25px;
+  height: 25px;
+  background-color: map-get($colors,"accent-color");
+  border-radius: 50%;
+}
+
+&__nav{
+  @include flex-gap(42px);
+}
+
+&__end{
+  @include flex-gap(42px);
+  align-items: center;
+}
+
+}
+
+
+
+
+
+

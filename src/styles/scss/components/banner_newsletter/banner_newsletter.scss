@@ -1,0 +1,32 @@
+.banner__newsletter{
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  border-bottom: 1px solid #8585854f;
+}
+.banner__newsletter-title{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.banner__newsletter-title h3{
+  color: #3D4F9F;
+  font-size: 18px;
+}
+.banner__newsletter-title p{
+  width: 60%;
+  color: #8D96BD;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.banner__newsletter-form input{
+  padding-left: 23px;
+  width: 279px;
+  height: 60px;
+  background-color: #EFEFF7;
+  border-radius: 10px;
+}
